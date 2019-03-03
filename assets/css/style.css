@@ -248,22 +248,60 @@ input[type=submit]:hover {
   nav {
     margin-right: 70px;
   }
+
   a#logo {
     margin-left: 40px;
   }
+
   .main-section {
     margin: 10px 170px 0px 40px; 
     float: none;
     width: 60%;
   }
+
+  /* Applies to Portfolio only */
+  .work {
+    margin: 10px 170px 0px 40px; 
+    float: none;
+  }
+
+  /* Applies to Contact only */
+  ul {
+    padding-right: 40px;
+  }
 }
+
+
 
 /* Changes kick in when screen is 768px or smaller */
 @media (max-width: 768px) {
-  body {
-    color: pink;
+  nav {
+    margin-right: 20px;
+  }
+
+  a#logo {
+    margin-left: 20px;
+  }
+
+  .main-section {
+    margin: 10px 170px 0px 20px; 
+    float: none;
+    width: 95%;
   }
 }
+
+/* Applies to Portfolio only */
+.work {
+  margin: margin: 10px 170px 0px 20px; 
+  float: none;
+}
+
+/* Applies to Contact only */
+ul {
+  padding-right: 40px;
+}
+}
+
 
 /* Changes kick in when screen is 640px or smaller */
 @media (max-width: 640px) {
