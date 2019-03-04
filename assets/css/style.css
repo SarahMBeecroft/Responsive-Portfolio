@@ -263,18 +263,32 @@ input[type=submit]:hover {
     width: 60%;
   }
 
+  p {
+    font-size: 16px;
+    line-height: 1.7em;
+  }
+
   /* Applies to Portfolio only */
-  .work {
-    margin: 10px 170px 0px 40px; 
-    float: none;
+  .work { 
+    float: left;
+    max-width: 40%;
+    height: auto;
+    flex: initial;
+    overflow: hidden;
+    left: 30px;
+  }
+   
+  h3 {
+    font-size: 16px;
+    height: auto;
   }
 
   /* Applies to Contact only */
   ul {
     padding-right: 40px;
+    line-height: 1.2em;
   }
 }
-
 
 
 /* Changes kick in when screen is 768px or smaller */
