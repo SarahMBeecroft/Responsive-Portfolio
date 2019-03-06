@@ -152,7 +152,6 @@ h3, h2 {
 }
 
 /* portfolio page */
-
 .work {
   position: relative;
   float: left;
@@ -283,10 +282,16 @@ input[type=submit]:hover {
     height: auto;
   }
 
+
   /* Applies to Contact only */
   ul {
     padding-right: 40px;
     line-height: 1.2em;
+  }
+
+  /* Prevents contact form from cutting off at bottom */
+  #contact-form {
+    margin-bottom: 100px;
   }
 }
 
@@ -311,6 +316,11 @@ input[type=submit]:hover {
   .work {
     margin: margin: 10px 170px 0px 20px; 
     float: none;
+    height: auto;
+  }
+  
+  #main-container {
+    white-space: nowrap;
   }
 
   /* Applies to Contact only */
@@ -325,11 +335,30 @@ input[type=submit]:hover {
 
 /* Changes kick in when screen is 640px or smaller */
 @media (max-width: 640px) {
-  body {
-    
-  }
-  header {
+  /* about section */
+  #logo {
     position: static;
+    width: 100%;
   }
+
+	nav {
+    position: relative;
+  }
+
+	nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+
+	nav:hover ul {
+
+		display: block;
+
+	}
+
 }
 
