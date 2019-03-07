@@ -319,10 +319,7 @@ input[type=submit]:hover {
     height: auto;
   }
   
-  #main-container {
-    white-space: nowrap;
-  }
-
+  
   /* Applies to Contact only */
   ul {
     padding-right: 40px;
@@ -336,9 +333,7 @@ input[type=submit]:hover {
 /* Changes kick in when screen is 640px or smaller */
 @media (max-width: 640px) {
   /* about section */
- 
-
-  #masthead {
+ #masthead {
     height: 200px;
     padding: 0;
     margin: 0;
@@ -371,17 +366,23 @@ input[type=submit]:hover {
     margin: 0;
     position: relative;
     overflow: hidden;  /* hides scroll bar */
+    clear: right;
     
   }
 
 
   .main-section {
     position: relative; 
-    width: 640px;
+    max-width: 100%;
+    clear: right;
   }
 
   .auth-image { 
     margin-left: 185px;
+  }
+  
+  .column {
+    width: 100%;
   }
 
   p {
